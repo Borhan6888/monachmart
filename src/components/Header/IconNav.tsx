@@ -9,10 +9,10 @@ const IconNav = () => {
           <Icon icon="ant-design:thunderbolt-filled" />
         </ListItem>
         <ListItem dense disablePadding disableGutters>
-          <Icon icon="ant-design:thunderbolt-filled" />
+          <Icon icon="icon-park:love-and-help" />
         </ListItem>
         <ListItem dense disablePadding disableGutters>
-          <Icon icon="ant-design:thunderbolt-filled" />
+          <Icon icon="ep:shopping-cart" />
         </ListItem>
         <ListItem dense disablePadding disableGutters>
           <ButtonBase>

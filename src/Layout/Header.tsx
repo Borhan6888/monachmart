@@ -1,4 +1,4 @@
-import { Container, Box, Grid } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 
 //Components
 import Logo from 'components/Header/Logo';

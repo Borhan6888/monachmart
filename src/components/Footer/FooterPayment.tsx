@@ -6,7 +6,7 @@ const FooterPayment = () => {
   return (
     <Container disableGutters maxWidth="xxxl">
       <Grid container spacing={1}>
-        <Grid item {...{ md: 5 }}>
+        <Grid item {...{ md: 4 }}>
           <Link href="#">
             <Box width="100%" component="img" src={PaymentCard} alt="PayLogo" />
           </Link>

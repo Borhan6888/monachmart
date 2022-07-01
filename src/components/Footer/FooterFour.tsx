@@ -3,7 +3,8 @@ import {
   List,
   ListItem,
   Link,
-  TextField,
+  InputBase,
+  ButtonBase,
   Stack,
   Typography,
 } from '@mui/material';
@@ -20,6 +21,13 @@ const Social = [
 const FooterFour = () => {
   return (
     <Box>
+      <Box>
+        <Typography variant="h6">NEWSLETTER</Typography>
+        <Box component="form">
+          <InputBase placeholder="Enter Your Email" required />
+          <ButtonBase type="submit">Subscribe</ButtonBase>
+        </Box>
+      </Box>
       <Box>
         <Typography variant="h6">JOIN US</Typography>
       </Box>

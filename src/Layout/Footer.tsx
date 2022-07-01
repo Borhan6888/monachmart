@@ -2,6 +2,7 @@ import { Container, Grid } from '@mui/material';
 import FooterFour from 'components/Footer/FooterFour';
 //components
 import FooterOne from 'components/Footer/FooterOne';
+import FooterSSL from 'components/Footer/FooterSSL';
 import FooterThree from 'components/Footer/FooterThree';
 import FooterTwo from 'components/Footer/FooterTwo';
 
@@ -21,6 +22,7 @@ const Footer = () => {
         <Grid item {...{ md: 4 }}>
           <FooterFour />
         </Grid>
+        <FooterSSL />
       </Grid>
     </Container>
   );

@@ -1,33 +1,27 @@
 import { Container, Grid } from '@mui/material';
+import FooterFour from 'components/Footer/FooterFour';
 //components
-import FooterCompany from 'components/Footer/FooterCompany';
-import FooterCustomer from 'components/Footer/FooterCustomer';
-import FooterPayment from 'components/Footer/FooterPayment';
-import FooterQr from 'components/Footer/FooterQr';
-import FooterSocial from 'components/Footer/FooterSocial';
-import FooterUnder from 'components/Footer/FooterUnder';
-import FootherLogo from 'components/Footer/FootherLogo';
+import FooterOne from 'components/Footer/FooterOne';
+import FooterThree from 'components/Footer/FooterThree';
+import FooterTwo from 'components/Footer/FooterTwo';
 
 const Footer = () => {
   return (
     <Container disableGutters maxWidth="xxxl">
       <Grid container spacing={3}>
         <Grid item {...{ md: 3 }}>
-          <FootherLogo />
-          <FooterSocial />
+          <FooterOne />
         </Grid>
         <Grid item {...{ md: 2 }}>
-          <FooterCompany />
+          <FooterTwo />
         </Grid>
         <Grid item {...{ md: 3 }}>
-          <FooterCustomer />
+          <FooterThree />
         </Grid>
         <Grid item {...{ md: 4 }}>
-          <FooterQr />
+          <FooterFour />
         </Grid>
       </Grid>
-      <FooterPayment />
-      <FooterUnder />
     </Container>
   );
 };

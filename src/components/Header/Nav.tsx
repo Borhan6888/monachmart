@@ -1,30 +1,23 @@
+import { Box, List, ListItem, Stack } from '@mui/material';
 import Link from 'next/link';
+
+//Data
+import NavData from 'Data/Header/Nav.data';
 
 const Nav = () => {
   return (
-    <nav>
-      <Link color="text.primary" href="#">
-        shwapno Card
-      </Link>
-      <Link color="text.primary" href="#">
-        Bata Gift Card
-      </Link>
-      <Link color="text.primary" href="#">
-        Eid Gift Card
-      </Link>
-      <Link color="text.primary" href="#">
-        Qurbani e Haat
-      </Link>
-      <Link color="text.primary" href="#">
-        Eid Fashon Lifestyle
-      </Link>
-      <Link color="text.primary" href="#">
-        Live Hour Deal
-      </Link>
-      <Link color="text.primary" href="#">
-        শিক্ষাঙ্গন.কম
-      </Link>
-    </nav>
+    <Box component="nav">
+      <List component={Stack} dense disablePadding direction="row">
+        {NavData &&
+          NavData.map((nav, i) => (
+            <ListItem key={i} dense disableGutters disablePadding>
+              <Link href={nav.url}>
+                <a>{nav.name}</a>
+              </Link>
+            </ListItem>
+          ))}
+      </List>
+    </Box>
   );
 };
 

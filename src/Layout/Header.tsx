@@ -8,7 +8,7 @@ import Nav from 'components/Header/Nav';
 
 const Header = () => {
   return (
-    <Container disableGutters maxWidth="xxxl">
+    <Container disableGutters maxWidth="xxxl" component="header">
       <Grid container spacing={2}>
         <Grid item {...{ md: 2 }}>
           <Logo />

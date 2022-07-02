@@ -2,13 +2,13 @@ import {
   Box,
   List,
   ListItem,
-  Link,
   InputBase,
   ButtonBase,
   Stack,
   Typography,
 } from '@mui/material';
 import { Icon } from '@iconify/react';
+import Link from 'next/link';
 
 const Social = [
   { icon: 'akar-icons:facebook-fill', url: '/' },
@@ -22,9 +22,11 @@ const FooterFour = () => {
   return (
     <Box>
       <Box>
-        <Typography variant="h6">NEWSLETTER</Typography>
+        <Typography variant="h6" component="h6">
+          NEWSLETTER
+        </Typography>
         <Box component="form">
-          <InputBase placeholder="Enter Your Email" required />
+          <InputBase placeholder="Enter Your Email" />
           <ButtonBase type="submit">Subscribe</ButtonBase>
         </Box>
       </Box>

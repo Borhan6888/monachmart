@@ -17,6 +17,9 @@ declare module '@mui/material/styles' {
 
 // Create a theme instance.
 const theme = createTheme({
+  typography: {
+    fontFamily: 'Open Sans',
+  },
   palette: {
     primary: {
       main: '#556cd6',
@@ -43,6 +46,13 @@ const theme = createTheme({
         root: {
           paddingLeft: '4%',
           paddingRight: '4%',
+        },
+      },
+    },
+    MuiButtonBase: {
+      styleOverrides: {
+        root: {
+          fontFamily: 'Open Sans',
         },
       },
     },
